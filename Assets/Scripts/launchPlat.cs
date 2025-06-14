@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class launchPlat : MonoBehaviour
 {
-    private Animator animator;
+    public Animator animator;
     public float launchForce;
+    public int launch = 0;
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponent<Animator>();
+   
     }
 
     // Update is called once per frame
@@ -22,9 +23,17 @@ public class NewBehaviourScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<player>().rb.AddForce(transform.up * launchForce,ForceMode.Impulse);
-            animator.SetTrigger("launch");
+            if (launch == 1)
+            {
+                AddForceFunc(collision);
+                launch = 0;
+            }
+        
         }
     }
 
+    public void AddForceFunc(UnityEngine.Collision col)
+    {
+        col.gameObject.GetComponent<player>().rb.AddForce(transform.up * launchForce, ForceMode.Impulse);
+    }
 }
