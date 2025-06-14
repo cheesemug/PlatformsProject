@@ -22,7 +22,7 @@ public class collissioner : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            other.transform.position = ballTpSpot.transform.localPosition;
+            other.transform.position = ballTpSpot.transform.position;
             other.GetComponent<Rigidbody>().velocity = new Vector3(0,0,0);
             animator.SetTrigger("launch");
         }
