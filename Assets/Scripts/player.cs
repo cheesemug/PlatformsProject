@@ -1,11 +1,10 @@
-using JetBrains.Rider.Unity.Editor;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class player : MonoBehaviour
 {
     [HideInInspector]public Rigidbody rb;
+    public int id;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +20,9 @@ public class player : MonoBehaviour
     {
         if (collider.gameObject.tag == "death")
         {
-            
+            Destroy(gameObject);
         }
+        
+
     }
 }
