@@ -9,15 +9,20 @@ public class SpinOnClick : MonoBehaviour
 
     private bool isRotating = false;
 
-    void OnMouseDown()
+    void OnMouseOver()
     {
         if (!isRotating && !GetComponentInChildren<Animator>().GetCurrentAnimatorStateInfo(0).IsName("launch"))
         {
-            StartCoroutine(RotateObjectSmoothly());
+            if(Input.GetMouseButtonDown(0))
+                StartCoroutine(RotateObjectSmoothly(rotationAngle));
+            if (Input.GetMouseButtonDown(1))
+                StartCoroutine(RotateObjectSmoothly(-rotationAngle));
         }
+            
     }
 
-    IEnumerator RotateObjectSmoothly()
+
+    IEnumerator RotateObjectSmoothly(float rotationAngle)
     {
         isRotating = true;
 
