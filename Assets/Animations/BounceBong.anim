@@ -320,9 +320,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.083333336
-    functionName: Func
+    functionName: Weeee
     data: 
-    objectReferenceParameter: {fileID: 0}
+    objectReferenceParameter: {fileID: 182787346991131923, guid: 904d975198001f04e8d63a01917d4985, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

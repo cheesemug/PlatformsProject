@@ -4,36 +4,22 @@ using UnityEngine;
 
 public class launchPlat : MonoBehaviour
 {
-    public Animator animator;
     public float launchForce;
-    public int launch = 0;
-    // Start is called before the first frame update
-    void Start()
-    {
-   
-    }
+    [HideInInspector]public int launch = 0;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
-    private void OnCollisionEnter(Collision collision)
+    public void Update()
     {
-        if (collision.gameObject.tag == "Player")
+        if (launch == 1)
         {
-            if (launch == 1)
-            {
-                AddForceFunc(collision);
-                launch = 0;
-            }
-        
+            AddForceFunc(gameObject);
+            launch = 0;
         }
     }
 
-    public void AddForceFunc(UnityEngine.Collision col)
+    public void AddForceFunc(GameObject gb)
     {
-        col.gameObject.GetComponent<player>().rb.AddForce(transform.up * launchForce, ForceMode.Impulse);
+        Debug.Log("WOW");
+        gb.GetComponent<player>().rb.AddForce(transform.up * launchForce, ForceMode.Impulse);
     }
 }
