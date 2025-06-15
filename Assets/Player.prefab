@@ -732,6 +732,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   id: 0
+  waterSplash: {fileID: 79699745097273431, guid: 337e323f1b4bc77479b61f18967aa236, type: 3}
 --- !u!33 &4747053789213753871
 MeshFilter:
   m_ObjectHideFlags: 0
