@@ -20,10 +20,22 @@ public class FlingScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        anim.SetTrigger("launch");
-        other.gameObject.transform.position = ballPos.position;
-        other.GetComponent<player>().rb.velocity = new Vector3(0, 0, 0);
-        obj = other.gameObject;
+        if(other.CompareTag("Player"))
+        {
+            Debug.Log("---.");
+            anim.SetTrigger("launch");
+            other.gameObject.transform.position = ballPos.position;
+            other.GetComponent<player>().rb.velocity = new Vector3(0, 0, 0);
+            other.transform.up = new Vector3 (Random.Range(0f,1f), Random.Range(0f, 1f), Random.Range(0f, 1f)).normalized;
+            Rigidbody[] kids = other.gameObject.GetComponents<Rigidbody>();
+            foreach (var item in kids)
+            {
+                item.velocity = new Vector3(0, 0, 0);
+            }
+            obj = other.gameObject;
+
+        }
+
     }
 
     public void Weeee()
