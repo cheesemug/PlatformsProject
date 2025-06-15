@@ -9,22 +9,22 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 8f61698a3d5912f47977538d3040e84e
   - enabled: 1
-    path: Assets/Scenes/Level 1.unity
+    path: Assets/Scenes/Level 1 Boyan.unity
     guid: b7e002f155066b64286e16ef9b6039ca
   - enabled: 1
-    path: Assets/Scenes/Level 2.unity
+    path: Assets/Scenes/Level 2 Boyan.unity
     guid: f1dfcc5c47bd91d48bcce13296cac08c
   - enabled: 1
-    path: Assets/Scenes/Level 3.unity
+    path: Assets/Scenes/Level 3 Boyan.unity
     guid: e81f3308c8368c94cb9758552f6b1d43
   - enabled: 1
-    path: Assets/Scenes/Level 4.unity
+    path: Assets/Scenes/Level 4 Boyan.unity
     guid: 0ff1098cc821c4f43b3d411466392c20
   - enabled: 1
-    path: Assets/Scenes/Level 5.unity
+    path: Assets/Scenes/Level 5 Boyan.unity
     guid: eee5351bc3bf33445b0a2506ed37cd6f
   - enabled: 1
-    path: Assets/Scenes/Level 6.unity
+    path: Assets/Scenes/Level 6 Boyan.unity
     guid: b584cd2d120736f4d8d4c108fa9f2b09
   - enabled: 1
     path: Assets/Scenes/End.unity
