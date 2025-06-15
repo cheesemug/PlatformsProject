@@ -27,6 +27,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 6 Boyan.unity
     guid: b584cd2d120736f4d8d4c108fa9f2b09
   - enabled: 1
+    path: Assets/Scenes/Level 7 Boyan.unity
+    guid: bd19ba7147d5b42438f6faf7eb40c6f6
+  - enabled: 1
+    path: Assets/Scenes/Level 8 Boyan.unity
+    guid: 793fb3d1e60d3304abf82e6feb40552b
+  - enabled: 1
     path: Assets/Scenes/End.unity
     guid: 0e15ad69e7626fc49867409e4f5a8b6d
   m_configObjects: {}
