@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E51447D6-6414-4AAE-AC5C-C63053FD8AB4}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{E51447D6-6414-4AAE-AC5C-C63053FD8AB4}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="PlayCollision" ID="{F9E4CA9A-D824-4490-A6A2-D7B5E1725173}">
+					<ChildrenList>
+						<Action Name="" ID="{360A459A-C50C-48E4-9D98-7B049507239C}" ShortID="859923565">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Collsion" ID="{CA83D16A-6CC8-4B4E-B48E-6C298E96210A}" WorkUnitID="{CAC8FBCE-F909-433E-A7F6-BA90CBB392F9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopCollision" ID="{FDEF4056-7852-4ACF-8810-C7897AAE8E95}">
+					<ChildrenList>
+						<Action Name="" ID="{B394922C-22F2-4F0C-8FC6-17F32B9BE13F}" ShortID="857542122">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Collsion" ID="{CA83D16A-6CC8-4B4E-B48E-6C298E96210A}" WorkUnitID="{CAC8FBCE-F909-433E-A7F6-BA90CBB392F9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_WinSound" ID="{F64F4FC3-5CCD-48D5-85F8-6346F0083324}">
+					<ChildrenList>
+						<Action Name="" ID="{422F753E-F934-4831-BD28-225B1CDEEDCA}" ShortID="765608295">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WinSound" ID="{38FEBC67-DE91-4219-AB52-A8385E6B9F23}" WorkUnitID="{CAC8FBCE-F909-433E-A7F6-BA90CBB392F9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Ambience" ID="{E2AC144E-650D-4210-B1B4-1509A78BF309}">
+					<ChildrenList>
+						<Action Name="" ID="{9EDE32F3-47C8-42A4-B86E-CFAA6C59C9E0}" ShortID="98009428">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience" ID="{D8B60B89-75A3-44B1-B38C-486877BA32C8}" WorkUnitID="{CAC8FBCE-F909-433E-A7F6-BA90CBB392F9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_rotate" ID="{3F959A9F-C024-4EEC-BCCB-80106AFED6B5}">
+					<ChildrenList>
+						<Action Name="" ID="{E68E7541-3ECE-474F-B1E6-B8C253E80416}" ShortID="100514406">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="rotate" ID="{00C5511D-C613-441C-8C9E-30D7F0ACDB88}" WorkUnitID="{CAC8FBCE-F909-433E-A7F6-BA90CBB392F9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Spawn" ID="{4B852941-A97D-4F34-919E-81C08DBE74D0}">
+					<ChildrenList>
+						<Action Name="" ID="{A29AC1CA-1413-477F-B147-D791A1E410F1}" ShortID="922815611">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Spawn" ID="{BAC97934-ECBA-457F-8D7B-C4681D0C766D}" WorkUnitID="{CAC8FBCE-F909-433E-A7F6-BA90CBB392F9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

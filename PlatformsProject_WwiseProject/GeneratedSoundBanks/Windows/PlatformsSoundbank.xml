@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="154">
+	<SoundBanks>
+		<SoundBank Id="972066666" Type="User" GUID="{271380C7-6AB0-4170-BC77-225C69DFF468}" Language="SFX" Hash="{1E9C9011-C53D-6EFC-B372-B660BF67EA3E}">
+			<ObjectPath>\SoundBanks\Default Work Unit\PlatformsSoundbank</ObjectPath>
+			<ShortName>PlatformsSoundbank</ShortName>
+			<Path>PlatformsSoundbank.bnk</Path>
+			<Media>
+				<File Id="54165776" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Splash.wav</ShortName>
+					<CachePath>55/{551428F6-BA1E-7AE7-1F66-0CCF567A4107}.wem</CachePath>
+				</File>
+				<File Id="161919070" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Rock Impact.wav</ShortName>
+					<CachePath>84/{846041F2-9FD5-2178-C8A5-0CE932BFABF1}.wem</CachePath>
+				</File>
+				<File Id="185920086" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>seagull2.wav</ShortName>
+					<CachePath>20/{20D36D97-C5A5-1FA4-EFA7-2A1017EA34DF}.wem</CachePath>
+				</File>
+				<File Id="293452898" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>seaside.wav</ShortName>
+					<CachePath>55/{55C61648-A795-89AD-4DCF-63032EA25DD6}.wem</CachePath>
+				</File>
+				<File Id="350077848" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>waves.wav</ShortName>
+					<CachePath>7A/{7AC61946-2F7C-B488-F8A1-93BE5F09FFC5}.wem</CachePath>
+				</File>
+				<File Id="435699814" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Scifi, Energy, Spawn, Portal, Teleport 01 SND45498 1.wav</ShortName>
+					<CachePath>DB/{DB7F8A86-12AA-149B-7256-ACB4262EC036}.wem</CachePath>
+				</File>
+				<File Id="479708242" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WinSound.wav</ShortName>
+					<CachePath>86/{8652DFB7-40C1-A154-7199-32D0C849F5E2}.wem</CachePath>
+				</File>
+				<File Id="831797816" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MetalImpact.wav</ShortName>
+					<CachePath>B2/{B2E1DC67-4695-A655-B208-1933256EAB3E}.wem</CachePath>
+				</File>
+				<File Id="945532751" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>rotate.wav</ShortName>
+					<CachePath>FC/{FC54E401-6ABC-BF33-0FF0-3BB464AFC67E}.wem</CachePath>
+				</File>
+				<File Id="1044690538" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>seagull1.wav</ShortName>
+					<CachePath>C7/{C7E67E33-442F-8744-128F-9070B28C29F5}.wem</CachePath>
+				</File>
+			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="902926360" Name="Silence" ObjectPath="\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience\Seagulls\Silence\Silence" GUID="{FD7BA477-6C00-4734-8DCD-2BCB1ED8D4B4}" LibName="Wwise Silence" LibId="6619138"/>
+				</Custom>
+			</Plugins>
+			<Events>
+				<Event Id="278617630" Name="Play_Ambience" ObjectPath="\Events\Default Work Unit\Play_Ambience" GUID="{E2AC144E-650D-4210-B1B4-1509A78BF309}" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="185920086"/>
+						<MediaRef Id="293452898"/>
+						<MediaRef Id="350077848"/>
+						<MediaRef Id="1044690538"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="902926360"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="2301701735" Name="Play_rotate" ObjectPath="\Events\Default Work Unit\Play_rotate" GUID="{3F959A9F-C024-4EEC-BCCB-80106AFED6B5}" DurationType="OneShot" DurationMin="0.45645833" DurationMax="0.45645833">
+					<MediaRefs>
+						<MediaRef Id="945532751"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1012143543" Name="Play_Spawn" ObjectPath="\Events\Default Work Unit\Play_Spawn" GUID="{4B852941-A97D-4F34-919E-81C08DBE74D0}" DurationType="OneShot" DurationMin="0.7289896" DurationMax="0.7289896">
+					<MediaRefs>
+						<MediaRef Id="435699814"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1924491861" Name="Play_WinSound" ObjectPath="\Events\Default Work Unit\Play_WinSound" GUID="{F64F4FC3-5CCD-48D5-85F8-6346F0083324}" DurationType="OneShot" DurationMin="3.3394167" DurationMax="3.3394167">
+					<MediaRefs>
+						<MediaRef Id="479708242"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1182355117" Name="PlayCollision" ObjectPath="\Events\Default Work Unit\PlayCollision" GUID="{F9E4CA9A-D824-4490-A6A2-D7B5E1725173}" DurationType="OneShot" DurationMin="1.882625" DurationMax="2.291104">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="1792046091" Id="2473969246" GUID="{51D84E56-367D-4774-83F9-2194E58808DC}"/>
+							<MediaRefs>
+								<MediaRef Id="831797816"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="1792046091" Id="2144363834" GUID="{E2A5A37A-C751-488E-9FC5-87BC4019E9F7}"/>
+							<MediaRefs>
+								<MediaRef Id="161919070"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="1792046091" Id="2654748154" GUID="{F918CDDE-6F4D-48FA-B4B7-C0664FDBE6F5}"/>
+							<MediaRefs>
+								<MediaRef Id="54165776"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="1093414115" Name="StopCollision" ObjectPath="\Events\Default Work Unit\StopCollision" GUID="{FDEF4056-7852-4ACF-8810-C7897AAE8E95}" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="1792046091" Id="2473969246" GUID="{51D84E56-367D-4774-83F9-2194E58808DC}"/>
+							<MediaRefs>
+								<MediaRef Id="831797816"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="1792046091" Id="2144363834" GUID="{E2A5A37A-C751-488E-9FC5-87BC4019E9F7}"/>
+							<MediaRefs>
+								<MediaRef Id="161919070"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="1792046091" Id="2654748154" GUID="{F918CDDE-6F4D-48FA-B4B7-C0664FDBE6F5}"/>
+							<MediaRefs>
+								<MediaRef Id="54165776"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</Events>
+			<StateGroups>
+				<StateGroup Id="1792046091" Name="Collision" ObjectPath="\States\Default Work Unit\Collision" GUID="{DD63B846-779B-4644-98FB-CC0EA1296D54}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Collision\None" GUID="{377E17CD-6336-4267-930E-D2FFAC0C886F}"/>
+						<State Id="2144363834" Name="Rock" ObjectPath="\States\Default Work Unit\Collision\Rock" GUID="{E2A5A37A-C751-488E-9FC5-87BC4019E9F7}"/>
+						<State Id="2473969246" Name="Metal" ObjectPath="\States\Default Work Unit\Collision\Metal" GUID="{51D84E56-367D-4774-83F9-2194E58808DC}"/>
+						<State Id="2654748154" Name="Water" ObjectPath="\States\Default Work Unit\Collision\Water" GUID="{F918CDDE-6F4D-48FA-B4B7-C0664FDBE6F5}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{5F5EE8F0-D65D-07F1-B68F-7A54F9396F87}</FileHash>
+</SoundBanksInfo>

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7942247808171266966}
   - component: {fileID: 4124851269160178541}
   - component: {fileID: 7179331071579991700}
+  - component: {fileID: 8240991844740105516}
   m_Layer: 0
   m_Name: PlatformPrefab
   m_TagString: Untagged
@@ -76,6 +77,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8240991844740105516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182787346991131923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 624cdf9323b5cb740a69c1fa3e57c26a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _akPlayRotate:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1fb6fe3f4729d674dbcfb96fca910fe3, type: 2}
 --- !u!1 &1688765173350248257
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,7 +107,7 @@ GameObject:
   - component: {fileID: 9130924211304214214}
   m_Layer: 0
   m_Name: AnimationParent
-  m_TagString: Untagged
+  m_TagString: metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -183,7 +200,7 @@ GameObject:
   - component: {fileID: 3990031711427930359}
   m_Layer: 0
   m_Name: Platforms
-  m_TagString: Untagged
+  m_TagString: metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

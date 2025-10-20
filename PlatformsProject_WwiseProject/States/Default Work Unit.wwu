@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C6ED7DC4-F67E-435C-BE81-4E9F9FFFCAF4}" SchemaVersion="123">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{C6ED7DC4-F67E-435C-BE81-4E9F9FFFCAF4}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Collision" ID="{DD63B846-779B-4644-98FB-CC0EA1296D54}">
+					<ChildrenList>
+						<State Name="None" ID="{377E17CD-6336-4267-930E-D2FFAC0C886F}"/>
+						<State Name="Rock" ID="{E2A5A37A-C751-488E-9FC5-87BC4019E9F7}"/>
+						<State Name="Metal" ID="{51D84E56-367D-4774-83F9-2194E58808DC}"/>
+						<State Name="Water" ID="{F918CDDE-6F4D-48FA-B4B7-C0664FDBE6F5}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

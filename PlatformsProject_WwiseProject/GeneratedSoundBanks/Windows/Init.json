@@ -1,0 +1,83 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "Type": "User",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "Hash": "{DB6C808A-529D-E646-C80F-0275C58E35A0}",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk",
+    "Plugins": {
+     "AudioDevices": [
+      {
+       "Id": "2317455096",
+       "Name": "No_Output",
+       "ObjectPath": "\\Audio Devices\\Default Work Unit\\No_Output",
+       "GUID": "{CD8BF442-5D62-4E14-8C94-B9B170ED1E37}",
+       "LibName": "No Output",
+       "LibId": "11862023"
+      },
+      {
+       "Id": "3859886410",
+       "Name": "System",
+       "ObjectPath": "\\Audio Devices\\Default Work Unit\\System",
+       "GUID": "{08D1F380-7F72-40BA-B450-A091B55A19E3}",
+       "LibName": "System",
+       "LibId": "11403271"
+      }
+     ]
+    },
+    "Busses": [
+     {
+      "Id": "3803692087",
+      "Name": "Master Audio Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
+      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "1792046091",
+      "Name": "Collision",
+      "ObjectPath": "\\States\\Default Work Unit\\Collision",
+      "GUID": "{DD63B846-779B-4644-98FB-CC0EA1296D54}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Collision\\None",
+        "GUID": "{377E17CD-6336-4267-930E-D2FFAC0C886F}"
+       },
+       {
+        "Id": "2144363834",
+        "Name": "Rock",
+        "ObjectPath": "\\States\\Default Work Unit\\Collision\\Rock",
+        "GUID": "{E2A5A37A-C751-488E-9FC5-87BC4019E9F7}"
+       },
+       {
+        "Id": "2473969246",
+        "Name": "Metal",
+        "ObjectPath": "\\States\\Default Work Unit\\Collision\\Metal",
+        "GUID": "{51D84E56-367D-4774-83F9-2194E58808DC}"
+       },
+       {
+        "Id": "2654748154",
+        "Name": "Water",
+        "ObjectPath": "\\States\\Default Work Unit\\Collision\\Water",
+        "GUID": "{F918CDDE-6F4D-48FA-B4B7-C0664FDBE6F5}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{C6E6A744-95CC-FE09-88FE-DC274E888F3A}"
+ }
+}

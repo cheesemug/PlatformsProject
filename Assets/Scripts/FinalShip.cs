@@ -8,8 +8,13 @@ public class FinalShip : MonoBehaviour
     public int numBalls;
     public GameObject winObject;
     private float winTimer = 1;
+    private ShipAudio shipAudio;
 
     // Start is called before the first frame update
+    private void Awake()
+    {
+        shipAudio = GetComponent<ShipAudio>();
+    }
     void Start()
     {
         numBalls = FindObjectsOfType<player>().Length;
@@ -28,6 +33,7 @@ public class FinalShip : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            shipAudio.PlayWinSound();
             Destroy(other.gameObject);
             numBalls--;
             if (numBalls == 0)

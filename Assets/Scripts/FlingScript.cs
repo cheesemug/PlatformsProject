@@ -22,7 +22,7 @@ public class FlingScript : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            Debug.Log("---.");
+            other.gameObject.GetComponent<player>().playMetalSound();
             anim.SetTrigger("launch");
             other.gameObject.transform.position = ballPos.position;
             other.GetComponent<player>().rb.velocity = new Vector3(0, 0, 0);

@@ -1,0 +1,32 @@
+Event	ID	Name			Wwise Object Path	Notes
+	278617630	Play_Ambience			\Default Work Unit\Play_Ambience	
+	1012143543	Play_Spawn			\Default Work Unit\Play_Spawn	
+	1093414115	StopCollision			\Default Work Unit\StopCollision	
+	1182355117	PlayCollision			\Default Work Unit\PlayCollision	
+	1924491861	Play_WinSound			\Default Work Unit\Play_WinSound	
+	2301701735	Play_rotate			\Default Work Unit\Play_rotate	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1792046091	Collision			\Default Work Unit\Collision	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Collision			
+	2144363834	Rock	Collision			
+	2473969246	Metal	Collision			
+	2654748154	Water	Collision			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	902926360	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience\Seagulls\Silence\Silence	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	54165776	Splash	C:\GitProjects\GameJamPlatforms\PlatformsProject\PlatformsProject_WwiseProject\.cache\55\{551428F6-BA1E-7AE7-1F66-0CCF567A4107}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Collisions\Collsion\Splash		439988
+	161919070	Rock Impact	C:\GitProjects\GameJamPlatforms\PlatformsProject\PlatformsProject_WwiseProject\.cache\84\{846041F2-9FD5-2178-C8A5-0CE932BFABF1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Collisions\Collsion\Rock Impact		361560
+	185920086	seagull2	C:\GitProjects\GameJamPlatforms\PlatformsProject\PlatformsProject_WwiseProject\.cache\20\{20D36D97-C5A5-1FA4-EFA7-2A1017EA34DF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience\Seagulls\seagull2		1645816
+	293452898	seaside	C:\GitProjects\GameJamPlatforms\PlatformsProject\PlatformsProject_WwiseProject\.cache\55\{55C61648-A795-89AD-4DCF-63032EA25DD6}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience\seaside		2086968
+	350077848	waves	C:\GitProjects\GameJamPlatforms\PlatformsProject\PlatformsProject_WwiseProject\.cache\7A\{7AC61946-2F7C-B488-F8A1-93BE5F09FFC5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience\waves		2063192
+	435699814	Spawn	C:\GitProjects\GameJamPlatforms\PlatformsProject\PlatformsProject_WwiseProject\.cache\DB\{DB7F8A86-12AA-149B-7256-ACB4262EC036}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Other\Spawn		140060
+	479708242	WinSound	C:\GitProjects\GameJamPlatforms\PlatformsProject\PlatformsProject_WwiseProject\.cache\86\{8652DFB7-40C1-A154-7199-32D0C849F5E2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\ShipSounds\WinSound		641264
+	831797816	MetalImpact	C:\GitProjects\GameJamPlatforms\PlatformsProject\PlatformsProject_WwiseProject\.cache\B2\{B2E1DC67-4695-A655-B208-1933256EAB3E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Collisions\Collsion\MetalImpact		439988
+	945532751	rotate	C:\GitProjects\GameJamPlatforms\PlatformsProject\PlatformsProject_WwiseProject\.cache\FC\{FC54E401-6ABC-BF33-0FF0-3BB464AFC67E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Launcher\rotate		87736
+	1044690538	seagull1	C:\GitProjects\GameJamPlatforms\PlatformsProject\PlatformsProject_WwiseProject\.cache\C7\{C7E67E33-442F-8744-128F-9070B28C29F5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience\seagull1		538984
+

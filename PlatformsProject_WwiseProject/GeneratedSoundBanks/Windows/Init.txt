@@ -1,0 +1,16 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1792046091	Collision			\Default Work Unit\Collision	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Collision			
+	2144363834	Rock	Collision			
+	2473969246	Metal	Collision			
+	2654748154	Water	Collision			
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

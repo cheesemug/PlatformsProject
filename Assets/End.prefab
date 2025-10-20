@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 7942247808171266966}
   - component: {fileID: 687624350924839}
   - component: {fileID: 5730626528458075745}
+  - component: {fileID: 2644184107013251232}
   m_Layer: 0
   m_Name: End
-  m_TagString: Untagged
+  m_TagString: metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,6 +72,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numBalls: 0
   winObject: {fileID: 79699745097273431, guid: 95c172a91b533d64d98d08cca4c27a4a, type: 3}
+--- !u!114 &2644184107013251232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182787346991131923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b2c5b94584d99b45b8affc9b8fa07bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _akPlayWin:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: bb68ff097fa109141ace3f02f7903a6b, type: 2}
 --- !u!1 &5965281806298936678
 GameObject:
   m_ObjectHideFlags: 0

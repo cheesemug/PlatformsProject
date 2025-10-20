@@ -1890,6 +1890,7 @@ GameObject:
   - component: {fileID: 1855748438320162898}
   - component: {fileID: 3220462322560511129}
   - component: {fileID: 8244932413932014079}
+  - component: {fileID: 4158464229781955328}
   - component: {fileID: 4747053789213753871}
   - component: {fileID: 1374075327790920631}
   m_Layer: 3
@@ -1979,6 +1980,44 @@ MonoBehaviour:
   rb: {fileID: 0}
   id: 0
   waterSplash: {fileID: 79699745097273431, guid: 337e323f1b4bc77479b61f18967aa236, type: 3}
+--- !u!114 &4158464229781955328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325519485603221536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f757f70c2d029ca41a1cfc462b455777, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _akPlayCollision:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 46ce382dae3beb04e800cb3b62a68632, type: 2}
+  _akStopCollision:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c55a8a51c8c24c442aaf1cefc0362573, type: 2}
+  _akWaterState:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c9b50a31ceff4f24e9d9da697d70b9d0, type: 2}
+  _akRockState:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0db1d7266f8f1b645bb09dbda78a691b, type: 2}
+  _akMetalState:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 25478c1c2f8642b4790c6853f104d05f, type: 2}
 --- !u!33 &4747053789213753871
 MeshFilter:
   m_ObjectHideFlags: 0

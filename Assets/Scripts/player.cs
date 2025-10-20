@@ -8,10 +8,16 @@ public class player : MonoBehaviour
 
     private Vector3 start;
 
+    private PlayerAudio playerAudio;
+
+    private void Awake()
+    {
+        playerAudio = GetComponent<PlayerAudio>();
+        rb = GetComponent<Rigidbody>();
+    }
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
         start = transform.position;
     }
 
@@ -22,11 +28,12 @@ public class player : MonoBehaviour
     }
     private void OnTriggerEnter(Collider collider)
     {
-        if (collider.gameObject.tag == "death")
+        if (collider.gameObject.tag == "water")
         {
+            Debug.Log("Hit trigger and ded");
+            playerAudio.PlayCollision("water");
             GameObject obj = Instantiate(waterSplash, transform.position, Quaternion.identity);
             Destroy(obj, 2f);
-
         }
     }
 
@@ -34,9 +41,19 @@ public class player : MonoBehaviour
     {
         if (collision.gameObject.tag == "death")
         {
+            Debug.Log("Hit collision and ded");
             //Destroy(gameObject);
             transform.position = start;
             rb.velocity = Vector3.zero;
+            playerAudio.PlaySpawn();
         }
+        else if (collision.gameObject.tag == "rock")
+        {
+            playerAudio.PlayCollision("rock");
+        }
+    }
+    public void playMetalSound()
+    {
+        playerAudio.PlayCollision("metal");
     }
 }

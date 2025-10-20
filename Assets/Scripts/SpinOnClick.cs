@@ -9,14 +9,27 @@ public class SpinOnClick : MonoBehaviour
 
     private bool isRotating = false;
 
+    private PlatformAudio platformAudio;
+
+    private void Awake()
+    {
+        platformAudio = GetComponent<PlatformAudio>();
+    }
+
     void OnMouseOver()
     {
         if (!isRotating)
         {
             if(Input.GetMouseButtonDown(0))
+            {
+                platformAudio.PlayRotate();
                 StartCoroutine(RotateObjectSmoothly(rotationAngle));
+            }
             if (Input.GetMouseButtonDown(1))
+            {
+                platformAudio.PlayRotate();
                 StartCoroutine(RotateObjectSmoothly(-rotationAngle));
+            }
         }
             
     }
